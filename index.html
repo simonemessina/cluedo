@@ -1,0 +1,46 @@
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cluedo 3.0</title>
+	    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	 <div class="banner" id="banner">
+		 <center>
+        <p class="banner-text">Per proseguire devi accettare che Simone è più forte di te a Cluedo</p>
+			
+        <button class="banner-button" onclick="acceptBanner()">Accetto</button>
+			  </center>
+    </div>
+<div class="container" id="container">
+	<h1>Cluedo 3.0 by Simo</h1>
+        <h2>Giocatori:</h2>
+        <div id="players-container">
+            <input type="text" id="player-input" placeholder="Inserisci il nome del giocatore">
+<button id="add-player-button" onmouseover="this.style.backgroundColor='#e74c3c';" onmouseout="this.style.backgroundColor='#1e5297';">Aggiungi giocatore</button>
+        </div>
+        <ul id="player-list" class="player-list"></ul>
+
+        <h2>Carte viste:</h2>
+        <select id="cards-seen-selector"></select>
+        <button onclick="addCardToCardsSeen()" onmouseover="this.style.backgroundColor='#e74c3c';" onmouseout="this.style.backgroundColor='#1e5297';">Aggiungi alle carte viste</button>
+        <ul id="cards-seen" class="card-list"></ul>
+
+        <h2>Possibilità:</h2>
+        <h3>Personaggi:</h3>
+        <ul id="cards-remaining-characters" class="card-list"></ul>
+
+        <h3>Armi:</h3>
+        <ul id="cards-remaining-weapons" class="card-list"></ul>
+
+        <h3>Stanze:</h3>
+        <ul id="cards-remaining-rooms" class="card-list"></ul>
+    </div>
+
+    <div class="footer">
+        Powered by Simone Messina &copy; 2023
+    </div>
+	 <script src="script.js"></script>
+</body>
+</html>

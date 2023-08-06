@@ -1,0 +1,138 @@
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f5fa;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #1e5297;
+        }
+        select, input[type="text"], button {
+            width: 100%;
+            height: 40px;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .button-container {
+            display: flex;
+            gap: 10px;
+        }
+        .button-container button {
+            cursor: pointer;
+        }
+        .button-container button:hover {
+            background-color: #1e5297;
+            color: #fff;
+        }
+        .card-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .card-list-item {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+        }
+        .player-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .player-list-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+        }
+        .player-list-item span {
+            margin-right: 10px;
+        }
+        .player-list-item button, .card-list-item button {
+            padding: 6px 12px;
+            background-color: #1e5297;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .player-list-item button:hover, .card-list-item button:hover {
+            background-color: #c0392b;
+        }
+        .player-list-item button {
+            width: auto;
+            display: inline-block;
+        }
+        .card-list-item button {
+            width: auto;  
+			display: block;
+        }
+        .card-list-item .player-name {
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #999;
+        }
+.banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f2f5fa;
+  padding: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear, opacity 0.3s;
+}
+
+.banner-text {
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.banner-button {
+  padding: 6px 12px;
+  background-color: #1e5297;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.banner-button:hover {
+  background-color: #0f406d;
+}
+.banner.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0.3s, opacity 0.3s;
+}
